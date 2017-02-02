@@ -51,6 +51,7 @@ def create_directories():
     run('mkdir -p %(SERVER_PROJECT_PATH)s' % app_config.__dict__)
     run('mkdir -p /var/www/uploads/%(PROJECT_FILENAME)s' % app_config.__dict__)
 
+@task
 def create_virtualenv():
     """
     Setup a server virtualenv.
